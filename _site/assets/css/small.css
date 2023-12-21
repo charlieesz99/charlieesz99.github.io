@@ -1,0 +1,135 @@
+body {
+    position: relative;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+#sidebar {
+    background-color: #8f8585;
+    padding: 1px 5px;
+    position: fixed;
+    top: 0;
+    width: 100%; /* 수정된 부분: sidebar의 너비를 줄였습니다. */
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* 추가된 부분: 가로 중앙 정렬을 위해 설정합니다. */
+}
+
+#sidebar a.nav-link {
+    margin-top: 1px; /* 수정된 부분: 각 링크의 위쪽 여백을 조절합니다. */
+    margin-bottom: 1px; /* 수정된 부분: 각 링크의 아래쪽 여백을 조절합니다. */
+    padding-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 50px;
+    z-index: 1;
+    text-align: center; /* 추가된 부분: 텍스트를 중앙 정렬합니다. */
+    width: 26%; /* 추가된 부분: 링크를 100%로 설정하여 가로 정렬을 합니다. */
+}
+
+/* #sidebar a.nav-link:not(:last-child)::after {
+    content: '|';
+    margin-left: -2px;
+    margin-right: 0px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    z-index: 0;
+} */
+
+#sidebar a.nav-link:hover,
+#sidebar a.nav-link.active {
+    color: #f1f1f1;
+}
+
+#sidebar a.nav-link.active {
+    background-color: #007bff; /* 활성 상태일 때 배경색을 변경합니다. */
+    border-radius: 5px;
+    color: #ffffff; /* 글자 색도 변경합니다. */
+}
+
+#content {
+    margin-top: 100px;
+    margin-left: 0px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+.content-section {
+    min-height: 800px;
+    padding: 20px 40px;
+}
+
+h1 {
+    font-size: 31px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+strong {
+    font-size: 21px;
+}
+
+p {
+    font-size: 16px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    border-width: 6px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.icon {
+    font-size: 24px;
+    color: white;
+}
+
+.text {
+    font-size: 18px;
+    margin: 0;
+}
+
+#profile,
+#profile-text {
+    display: none; /* 해당 요소들을 숨깁니다. */
+}
+
+img {
+    width: 280px;
+    height: 210px;
+    border: 1px solid rgb(215, 208, 208);
+    border-radius: 5%;
+    padding: 5px;
+}

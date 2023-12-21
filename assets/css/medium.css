@@ -6,7 +6,7 @@ body {
 
 #sidebar {
     height: 100%;
-    width: 320px;
+    width: 250px;
     position: fixed;
     top: 0;
     left: 0;
@@ -43,17 +43,18 @@ body {
 
 #sidebar a.active {
     background-color: #007bff;
+    border-radius: 5px;
 }
 
 #content {
-    margin-left: 320px;
+    margin-left: 250px;
     padding: 0px;
     background-color: #fff;
 }
 
 .content-section {
     min-height: 800px;
-    padding: 80px 140px;
+    padding: 80px 80px;
 }
 
 h1 {
@@ -111,8 +112,8 @@ ul {
 li {
     display: flex;
     align-items: center;
-    width: 50%;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .icon-container {
@@ -134,4 +135,17 @@ li {
 .text {
     font-size: 18px;
     margin: 0;
+}
+
+#profile,
+#profile-text {
+    display: block; /* 활성화된 상태에서는 보이도록 설정합니다. */
+}
+
+img {
+    width: 300px;
+    height: 235px;
+    border: 1px solid rgb(215, 208, 208);
+    border-radius: 5%;
+    padding: 5px;
 }
